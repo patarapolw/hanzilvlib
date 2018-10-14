@@ -1,11 +1,16 @@
 [tool.poetry]
 name = "hanzilvlib"
 version = "0.1.0"
-description = ""
-authors = ["patarapolw <patarapolw@gmail.com>"]
+description = "A library to view contents from HanziLevelProject, plus some popular dictionaries."
+authors = ["Pacharapol Withayasakpunt <patarapolw@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+keywords = ['hanzi', 'chinese']
+repository = "https://github.com/patarapolw/hanzilvlib"
+homepage = "https://github.com/patarapolw/hanzilvlib"
 
 [tool.poetry.dependencies]
-python = "*"
+python = ">=3"
 importlib_resources = "^1.0"
 
 [tool.poetry.dev-dependencies]
