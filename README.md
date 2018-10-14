@@ -16,9 +16,10 @@ pip install hanzilvlib
 
 The contents are contained in two subpackages:-
 
-### `hanzilvlib.dictionary`
+- `hanzilvlib.dictionary`
+- `hanzilvlib.level`
 
-### `hanzilvlib.level`
+Please see [/example.ipynb](https://github.com/patarapolw/hanzilvlib/blob/master/example.ipynb).
 
 ## Related projects
 

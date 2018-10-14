@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "hanzilvlib"
-version = "0.1.0"
+version = "0.1.0.5"
 description = "A library to view contents from HanziLevelProject, plus some popular dictionaries."
 authors = ["Pacharapol Withayasakpunt <patarapolw@gmail.com>"]
 license = "MIT"
@@ -10,8 +10,15 @@ repository = "https://github.com/patarapolw/hanzilvlib"
 homepage = "https://github.com/patarapolw/hanzilvlib"
 
 [tool.poetry.dependencies]
-python = ">=3"
+python = ">=3.5"
 importlib_resources = "^1.0"
+requests = "^2.19"
+bs4 = "^0.0.1"
+cjkradlib = "^0.1.1"
+wordfreq = "^2.2"
+jieba = "^0.39.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^3.8"
+jupyter = "^1.0"
+notebook = "^5.7"

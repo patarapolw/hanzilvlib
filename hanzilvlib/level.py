@@ -13,7 +13,7 @@ class HanziLevel:
     def get_level(self, hanzi):
         for i, hanzi_list in enumerate(self.data['levels']):
             if hanzi in hanzi_list:
-                return i
+                return i + 1
 
     def get_label(self, hanzi):
         for v in self.data['labels']:
@@ -22,4 +22,4 @@ class HanziLevel:
                 return label
 
     def get_hanzi_list(self, level):
-        return self.data['level'][level]
+        return self.data['levels'][level - 1]
