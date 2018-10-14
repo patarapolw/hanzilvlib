@@ -1,0 +1,12 @@
+[tool.poetry]
+name = "hanzilvlib"
+version = "0.1.0"
+description = ""
+authors = ["patarapolw <patarapolw@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "*"
+importlib_resources = "^1.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.8"
