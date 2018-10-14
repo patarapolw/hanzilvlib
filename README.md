@@ -6,6 +6,12 @@
 
 A library to view contents from [HanziLevelProject](http://hanzilevelproject.blogspot.com/#!), plus some popular dictionaries.
 
+## Features
+
+- Hanzi meanings, variants, components and supercompositions, sorted by Hanzi frequency.
+- Built-in CE-DICT and sorted by vocab frequency.
+- Sentences from [Chinese Sentences and audio, spoon fed](https://ankiweb.net/shared/info/867291675), and if inadequate, from [Jukuu](http://jukuu.com)
+
 ## Installation
 
 ```commandline
