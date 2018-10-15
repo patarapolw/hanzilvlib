@@ -8,8 +8,8 @@ A library to view contents from [HanziLevelProject](http://hanzilevelproject.blo
 
 ## Features
 
-- Hanzi meanings, variants, components and supercompositions, sorted by Hanzi frequency.
-- Built-in CE-DICT and sorted by vocab frequency.
+- Hanzi meanings, variants, [components and supercompositions](https://github.com/patarapolw/cjkradlib), sorted by [Hanzi frequency](http://lingua.mtsu.edu/chinese-computing/statistics/char/list.php?Which=MO).
+- Built-in [CE-DICT](https://www.mdbg.net/chinese/dictionary) and sorted by [vocab frequency](https://pypi.org/project/wordfreq/).
 - Sentences from [Chinese Sentences and audio, spoon fed](https://ankiweb.net/shared/info/867291675), and if inadequate, from [Jukuu](http://jukuu.com)
 
 ## Installation
