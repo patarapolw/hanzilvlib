@@ -5,6 +5,7 @@ from io import StringIO
 import requests
 from bs4 import BeautifulSoup
 from wordfreq import word_frequency
+from ruamel import yaml
 import json
 from cjkradlib import RadicalFinder
 
@@ -135,16 +136,22 @@ class _PrintableObject:
     entry = NotImplemented
 
     def __getattr__(self, item):
-        return self.entry.get(item, None)
+        try:
+            return self.entry[item]
+        except KeyError:
+            raise AttributeError
 
     def __getitem__(self, item):
-        return getattr(self, item, None)
+        return self.entry[item]
 
     def to_json(self):
         return self.entry
 
     def _repr_pretty_(self, pp, cycle):
-        pp.text(json.dumps(self.to_json(), indent=2, ensure_ascii=False, default=repr))
+        pp.text(yaml.dump(json.loads(json.dumps(self.to_json(),
+                                                ensure_ascii=False,
+                                                default=repr)),
+                          allow_unicode=True))
 
     def __repr__(self):
         return self.key
@@ -218,3 +225,6 @@ class _SentenceObject(_PrintableObject):
     def __init__(self, entry):
         self.entry = entry
         self.key = entry['sentence']
+
+    def to_json(self):
+        return self.entry

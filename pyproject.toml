@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "hanzilvlib"
-version = "0.1.1"
+version = "0.1.2"
 description = "A library to view contents from HanziLevelProject, plus some popular dictionaries."
 authors = ["Pacharapol Withayasakpunt <patarapolw@gmail.com>"]
 license = "MIT"
@@ -17,6 +17,7 @@ bs4 = "^0.0.1"
 cjkradlib = "^0.1.1"
 wordfreq = "^2.2"
 jieba = "^0.39.0"
+"ruamel.yaml" = "^0.15.72"
 
 [tool.poetry.dev-dependencies]
 pytest = "^3.8"
